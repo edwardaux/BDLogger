@@ -1,0 +1,78 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		BF1F29F1179FD96B00DB60BE /* BDLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDLogger.h; sourceTree = "<group>"; };
+		BF1F29F2179FD96B00DB60BE /* BDLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDLogger.m; sourceTree = "<group>"; };
+		BF1F29F3179FD98100DB60BE /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		BFD58415179FE405000E980B /* license.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BF1F29EA179FD94E00DB60BE = {
+			isa = PBXGroup;
+			children = (
+				BFD58415179FE405000E980B /* license.md */,
+				BF1F29F3179FD98100DB60BE /* readme.md */,
+				BF1F29F1179FD96B00DB60BE /* BDLogger.h */,
+				BF1F29F2179FD96B00DB60BE /* BDLogger.m */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		BF1F29EB179FD94E00DB60BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = BF1F29EE179FD94E00DB60BE /* Build configuration list for PBXProject "BDLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF1F29EA179FD94E00DB60BE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		BF1F29EF179FD94E00DB60BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BF1F29F0179FD94E00DB60BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1F29EE179FD94E00DB60BE /* Build configuration list for PBXProject "BDLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1F29EF179FD94E00DB60BE /* Debug */,
+				BF1F29F0179FD94E00DB60BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1F29EB179FD94E00DB60BE /* Project object */;
+}
