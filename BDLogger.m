@@ -34,10 +34,10 @@
 -(id)init {
 	self = [super init];
 	if (self != nil) {
-		self.timestamp = [NSDate date];
-		self.severity = BDSeverityNotice;
-		self.message = @"";
-		self.userInfo = nil;
+		_timestamp = [NSDate date];
+		_severity = BDSeverityNotice;
+		_message = @"";
+		_userInfo = nil;
 	}
 	return self;
 }
@@ -78,18 +78,18 @@
 -(id)initWithURL:(NSURL *)logStoreURL {
 	self = [super init];
 	if (self != nil) {
-		self.logStoreURL = logStoreURL;
-		self.connection = NULL;
-		self.insertStatement = NULL;
-		self.dispatchQueue = dispatch_queue_create("com.blackdog.bdlogger.queue", DISPATCH_QUEUE_SERIAL);
-		self.lastCheckForPruning = [NSDate dateWithTimeIntervalSince1970:0];
-		self.filterSeverity = BDSeverityWarning;
-		self.pruneLimitDays = @(7);
-		self.pruneFrequencySecs = @(3600);
+		_logStoreURL = logStoreURL;
+		_connection = NULL;
+		_insertStatement = NULL;
+		_dispatchQueue = dispatch_queue_create("com.blackdog.bdlogger.queue", DISPATCH_QUEUE_SERIAL);
+		_lastCheckForPruning = [NSDate dateWithTimeIntervalSince1970:0];
+		_filterSeverity = BDSeverityWarning;
+		_pruneLimitDays = @(7);
+		_pruneFrequencySecs = @(3600);
 #if TARGET_IPHONE_SIMULATOR
-		self.shouldNSLog = YES;
+		_shouldNSLog = YES;
 #else
-		self.shouldNSLog = NO;
+		_shouldNSLog = NO;
 #endif
 	}
 	return self;
