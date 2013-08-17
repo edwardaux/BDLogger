@@ -57,7 +57,7 @@ BDLogger *logger = [BDLogger logger];
 // returns entries between two dates that are Info severity (or worse)
 NSDate *startDate = ...;
 NSDate *endDate = ...;
-NSArray *entries = [logger entriesBetweenStart:startDate end:endDate severity:BDSeverityInfo error:nil];
+NSArray *entries = [logger retrieveBetweenStart:startDate end:endDate severity:BDSeverityInfo error:nil];
 
 // returns the last 10 entries that are Info severity or worse
 NSArray *entries = [logger retrieveRecent:10 severity:BDSeverityInfo error:nil];

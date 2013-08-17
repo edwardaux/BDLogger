@@ -85,14 +85,14 @@ typedef NS_OPTIONS(NSUInteger, BDSeverity) {
  *     entry.userInfo = @{ @"somekey" : @"somevalue", @"otherkey" : @(123) };
  *     [logger log:entry];
  *
- * In addition to saving log entries, they can easily be retrieved by calling the -entriesBetweenStart:end:severity:error:
+ * In addition to saving log entries, they can easily be retrieved by calling the -retrieveBetweenStart:end:severity:error:
  * method.  For example:
  * 
  *     BDLogger *logger = [BDLogger logger];
  *     NSError *error = nil;
  *     NSDate *startDate = ...;
  *     NSDate *endDate = ...;
- *     NSArray *entries = [logger entriesBetweenStart:startDate end:endDate severity:BDSeverityInfo error:&error];
+ *     NSArray *entries = [logger retrieveBetweenStart:startDate end:endDate severity:BDSeverityInfo error:&error];
  *
  * While the system offers a singleton logger object, you can still create your own loggers if you want to
  * control where the log store gets written.
